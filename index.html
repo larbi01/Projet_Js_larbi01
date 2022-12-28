@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<section>
+
+    <div class="container">
+<!--get name-->
+<label for="username" >Username:</label><br>
+<input type="text" id="username" name="username" autocomplete="off"><br>
+<p id="erroruser"></p>
+<br>
+
+<!--get mail-->
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" autocomplete="off"><br>
+<p id="erroremail"></p>
+<br>
+
+<!--get password-->
+<label for="Password">Password</label><br>
+<input type="password" id="password" onkeyup="validatePassword()" autocomplete="off">
+<div id="password-error" class="errorMessage" style="display: none; color: red;"></div>
+<br>
+
+<!--confirm password-->
+<div id="corr">
+    <label for="Confirm_Password">Confirm Password</label><br>
+<input type="password" id="confirm-password" onkeyup="validateConfirmPassword()" autocomplete="off">
+<div id="confirm-password-error" class="errorMessage" style="display: none; color: red;"></div>
+</div>
+
+<br>
+<!--Bouton-->
+<a href="./main/main.html" >
+    <button  > SIGN UP</button>
+</a>
+</div>
+    
+</section>
+        
+      <script src="index.js"></script>
+</body>
+</html>
+  
